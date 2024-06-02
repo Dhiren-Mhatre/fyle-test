@@ -1,0 +1,367 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 301.3125rem; /* converted from 4821px */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-size: 1.6rem; /* set a base font size */
+}
+
+.front-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.award-winning {
+  position: absolute;
+  top: 15.1875rem; /* converted from 243px */
+  left: 23.5rem; /* converted from 376px */
+  width: auto;
+  height: auto;
+  text-align: left;
+  font: normal normal 600 1.875rem/3.4375rem Poppins; /* converted from 30px/110px */
+  letter-spacing: 0;
+  color: #FF3147;
+  text-transform: uppercase;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.hero {
+  position: absolute;
+  top: 6.25rem; /* converted from 100px */
+  left: 66.125rem; /* converted from 1058px */
+  width: 30.4375rem; /* converted from 487px */
+  height: 46.0625rem; /* converted from 737px */
+  background-size: cover;
+  opacity: 1;
+}
+
+.dma {
+  position: absolute;
+  top: 19.5rem; /* converted from 312px */
+  left: 23.5rem; /* converted from 376px */
+  width: 36.875rem; /* converted from 584px */
+  height: 5rem; /* converted from 80px */
+  text-align: left;
+  font-size: 3rem; /* adjusted font size */
+  letter-spacing: 0;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.front-content {
+  position: absolute;
+  top: 31.375rem; /* converted from 502px */
+  left: 23.4375rem; /* converted from 375px */
+  width: 36.875rem; /* converted from 584px */
+  height: 5.1875rem; /* converted from 83px */
+  text-align: left;
+  font: normal normal normal 1rem/1.875rem Poppins; /* converted from 16px/30px */
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+}
+
+.contact-us {
+  position: absolute;
+  top: 43.625rem; /* converted from 697px */
+  left: 23.6875rem; /* converted from 379px */
+  width: 11.6875rem; /* converted from 187px */
+  height: 3.875rem; /* converted from 62px */
+  background: #FF3366 0% 0% no-repeat padding-box;
+  border-radius: 0.3125rem; /* converted from 5px */
+  border: none;
+  opacity: 1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-us:hover {
+  background-color: #FF6699;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 0.0625rem solid black; /* converted from 1px */
+  border-radius: 0.625rem; /* converted from 10px */
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0.625rem rgba(0,0,0,0.1); /* converted from 10px */
+}
+
+.popup form {
+  padding: 0.625rem; /* converted from 10px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 30%; /* converted from 30% */
+  left: 40%; /* converted from 40% */
+  position: relative;
+  width: 28.125rem; /* converted from 450px */
+  height: 28.625rem; /* converted from 362px */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.0625rem solid #F1F1F1; /* converted from 1px */
+  border-radius: 0.3125rem; /* converted from 5px */
+  opacity: 1;
+}
+
+.slider-wrapper {
+  top: 79.4375rem; /* converted from 1271px */
+  left: 23.4375rem; /* converted from 375px */
+  width: 3.125rem; /* converted from 50px */
+  height: 32.9375rem; /* converted from 526px */
+  margin: auto;
+  padding: 1.25rem 0; /* converted from 20px */
+  overflow: hidden;
+  width: calc(100% - 23.4375rem); /* converted from 375px */
+  margin-left: 23.4375rem; /* converted from 375px */
+  padding: 1.25rem 0; /* converted from 20px */
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  margin: 0 0.46875rem; /* converted from 0 7.5px */
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem; /* converted from 20px */
+  margin-bottom: 1.25rem; /* converted from 20px */
+}
+
+.dot {
+  height: 0.9375rem; /* converted from 15px */
+  width: 0.9375rem; /* converted from 15px */
+  margin: 0 0.3125rem; /* converted from 0 5px */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.slider-container {
+  position: absolute;
+  top: 79.4375rem; /* converted from 1271px */
+  width: 120rem; /* converted from 1920px */
+  height: 39.375rem; /* converted from 630px */
+}
+
+.hover-animation {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 92%;
+  width: 92%;
+  transform: translate(-50%, -50%);
+  background: #FF3147 0% 0% no-repeat padding-box;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem; /* converted from 16px */
+  padding: 1.25rem; /* converted from 20px */
+  border-radius: 0.625rem; /* converted from 10px */
+}
+
+.slider .slide {
+  position: relative;
+}
+
+.slider .slide:hover .hover-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide button {
+  background: #F4F4F4 0% 0% no-repeat padding-box;
+  border-radius: 0.125rem; /* converted from 2px */
+  width: 11.5625rem; /* converted from 185px */
+  height: 3.125rem; /* converted from 50px */
+  border: none;
+  font-weight: bold;
+  color: #FF3147;
+}
+
+.image-container a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.features-fyle {
+  
+  margin-top: 1.875rem; /* converted from 30px */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  left: 23.4375rem; /* converted from 375px */
+  width: 88.125rem; 
+  /* right: 23.4375rem; converted from 375px */
+  left: 23.4375rem; /* converted from 375px */
+  top: 139.9375rem; /* converted from 2239px */
+}
+
+.features-fyle h1 {
+  text-align: left;
+  margin-top: 0.625rem; /* converted from 10px */
+  font-size: 1.25rem; /* converted from 20px */
+  font-weight: bold;
+  color: #000000;
+  opacity: 1;
+}
+
+.features-fyle img {
+  width: 4.375rem; /* converted from 70px */
+  margin-bottom: 1.25rem; /* converted from 20px */
+  height: 4.375rem; /* converted from 70px */
+  opacity: 1;
+}
+
+/* Continuing with the remaining CSS code in the next response. */
+.feature-card {
+  
+  
+  margin-right: 6.875rem; /* converted from 30px */
+}
+
+.feature-card p{
+  margin-bottom: 1.8rem;
+  width: 256px;
+height: 75px;
+}
+
+
+.container {
+  margin-top: 1.875rem; /* converted from 30px */
+  position: absolute;
+  top: 169.125rem; /* converted from 2718px */
+  left: 23.4375rem; /* converted from 375px */
+  width: 88.125rem; /* converted from 1170px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-project {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* converted from 10px */
+}
+
+.image-container1 {
+  flex: 1;
+  /* padding: 1.25rem; converted from 20px;; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.625rem; /* converted from 10px */
+}
+
+.image-container1 img {
+  width: 100%;
+  height: 220%;
+  transform: translateX(1rem);
+
+  object-fit: cover;
+  border-radius: 1.25rem; /* converted from 20px */
+}
+
+.content-container {
+  background-color: #f4f1f1;
+  flex: 1;
+  padding: 1.25rem; /* converted from 20px */
+}
+
+.content {
+  padding: 2.1875rem; /* converted from 35px */
+  margin-bottom: 1.25rem; /* converted from 20px */
+  cursor: pointer;
+}
+
+.content h3 {
+  margin: 0 0 0.625rem; /* converted from 0 0 10px */
+}
+
+.content p {
+  margin: 0;
+}
+
+.content.active {
+  background-color: #FF3147;
+  border-radius: 0.625rem; /* converted from 10px */
+  color: white;
+}
+
+.growth-card img {
+  margin: 0.9375rem; /* converted from 15px */
+  width: 2.3125rem; /* converted from 37px */
+  height: 1.875rem; /* converted from 30px */
+}
+
+.growth-card h1 {
+  width: 10.125rem; /* converted from 162px */
+  height: 5.25rem; /* converted from 84px */
+  text-align: center;
+  font: normal normal 300 3.75rem/4.0625rem Poppins; /* converted from 60px/65px */
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.growth-card p {
+  width: 20.75rem; /* converted from 172px */
+  height: 1.75rem; /* converted from 28px */
+  transform: translateY(-3.125rem); /* converted from -50px */
+  text-align: center;
+  font: normal normal 300 1.25rem/5rem Poppins; /* converted from 20px/80px */
+}
+
+.growth-card {
+  width: 16.875rem; /* converted from 270px */
+  height: 14.6875rem; /* converted from 233px */
+  margin-top: 1.25rem; /* converted from 20px */
+  margin-right: 1.875rem; /* converted from 30px */
+  padding: 0.625rem; /* converted from 10px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.growth-card:hover {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0.1875rem 0.375rem 1.25rem #672C2C1F; /* converted from 3px 6px 20px */
+}
+
+.growth-cards {
+  transform: translateY(-3.125rem); /* converted from -50px */
+}
+
+/* End of the CSS code. */
+
+
+/* Similarly, convert other pixel values to rems */
+
+/* Now, let's add the media queries for responsiveness */
